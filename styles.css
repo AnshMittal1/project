@@ -196,3 +196,54 @@ body::-webkit-scrollbar-thumb{
 
 
 
+
+.popular{
+    margin-left: 5vw;
+    margin-bottom: 50px;
+}
+
+
+.info-card{
+    display: flex;
+    gap: 60px;
+    margin-bottom: 50px;
+    background-color: #2c2c2c;
+    width: 90vw;
+    border-radius: 20px;
+    
+}
+
+.info-card:hover{
+    box-shadow: 0 4px 8px 0 rgba(170, 170, 170, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.guide-img{
+    width: 30vw;
+    
+    margin: 1vw;
+    border-radius: 20px;
+}
+
+.guide-btn{
+    margin-top: 6vh;
+    margin-bottom: 18vh;
+}
+
+.guide-contact{
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: #27c6db;
+    color: white;
+    border: none;
+    position: absolute;
+    
+    font-size: 2vh;
+
+}
+
+
+.guide-contact:hover{
+    cursor: pointer;
+    
+}
