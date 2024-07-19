@@ -48,9 +48,18 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
 }
+
 .nav .cta .sign-up {
     background-color: #27c6db;
     color: white;
+    box-shadow: inset 0 0 0 0 #093656;
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.nav .cta .sign-up:hover {
+    box-shadow: inset 95px 0 0 0 #093656;
+    cursor: pointer;
 }
 .nav .cta .log-in {
     color: white;
