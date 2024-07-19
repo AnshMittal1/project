@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trips - Beautiful Bhutan</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALserzUo00vS2lUkpNslPffpgo2RztCjA&libraries=places"></script>
 </head>
 <body>
     <header class="header">
@@ -17,7 +18,7 @@
                 <li><a href="#">Contact Us</a></li>
             </ul>
             <div class="search-container">
-                <input type="text" placeholder="Search...">
+                <input id="autocomplete" type="text" placeholder="Enter a location">
                 <button type="submit">Search</button>
             </div>
             <div class="cta">
@@ -126,5 +127,7 @@
         here will be the content of the website
     </footer>
     
+    <script src="script.js"></script>
+
 </body>
 </html>
