@@ -194,7 +194,7 @@ body::-webkit-scrollbar-thumb {
 .popular {
     margin-left: 5vw;
     margin-bottom: 50px;
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    
 }
 
 .info-card {

@@ -111,7 +111,8 @@ body::-webkit-scrollbar-thumb{
     margin-left:5vw ;
     margin-right:5vw ;
     padding-top: 2vh;
-    height: 80vh;
+    height: 100vh;
+    margin-bottom: 5vh;
     border-radius: 2vw;
     text-align: center;
     
@@ -133,6 +134,7 @@ body::-webkit-scrollbar-thumb{
     padding-left:5vw ;
     display: flex;
     gap: 5vw;
+    flex-wrap: wrap;
     
 }
 
@@ -168,3 +170,121 @@ body::-webkit-scrollbar-thumb{
     border-radius: 0px  0px  5px 5px;
 }
 
+
+
+* {
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; 
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer_c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.linkedin_link,
+.github_link {
+    text-decoration: none;
+}
+
+.footer_primary {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_primary a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 10px; 
+    transition: background-color 0.3s ease; 
+}
+
+.footer_primary a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.Secondry_footer {
+    display: flex;
+    align-items: center;
+}
+
+.Secondry_footer span {
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.Footer_social {
+    display: flex;
+}
+
+.Footer_social a {
+    margin-right: 10px;
+}
+
+.Footer_social img {
+    width: 20px;
+    height: 20px;
+}
+
+
+@media (max-width: 600px) {
+    .footer_c {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_primary {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .footer_primary a {
+        margin: 5px 0;
+    }
+
+    .Secondry_footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Secondry_footer span {
+        margin-bottom: 10px;
+    }
+
+    .Footer_social {
+        justify-content: center;
+    }
+
+    .Footer_social a {
+        margin: 0 5px;
+    }
+}
