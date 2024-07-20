@@ -113,6 +113,7 @@ body::-webkit-scrollbar-thumb{
     padding-top: 2vh;
     height: 80vh;
     border-radius: 2vw;
+    text-align: center;
     
 }
 #locationName{
@@ -128,18 +129,25 @@ body::-webkit-scrollbar-thumb{
 }
 
 .guides-container{
-    padding: 5vh;
+    padding-top: 7vh;
+    padding-left:5vw ;
     display: flex;
     gap: 5vw;
+    
 }
 
 .guides{
-    width: 25vw;
-    height: 35vh;
+    width: 23vw;
+    height: 30vh;
     position: relative;
-    
+    transition: 0.25s;
 
 }
+
+.guides:hover{
+    scale: 1.05;
+}
+
 .guides:hover .guide-text{
     opacity: 0.75;
     cursor: pointer;
