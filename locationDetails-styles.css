@@ -107,7 +107,8 @@ body::-webkit-scrollbar-thumb{
 
 #locationData{
     width: 90vw;
-    background-color: #0c3141;
+    background: linear-gradient(to bottom, #4a90e2, #003366);
+    
     margin-left:5vw ;
     margin-right:5vw ;
     padding-top: 2vh;

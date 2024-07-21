@@ -1,0 +1,33 @@
+{
+    
+    "people": [
+        {
+          "name": "Jordan",
+          "intro": "Hello and welcome to Mumbai! I'm Jordan, here to introduce you to the city's best-kept secrets and lively atmosphere",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScDljJ4-XaodEugbHy8PIoaGfJOJ96ayCZDw&usqp=CAU"
+        },
+      {
+        "name": "Alex",
+        "intro": "Welcome to the enchanting city of Mumbai! I'm Alex, your guide, ready to unveil the hidden gems and vibrant culture of this unique destination",
+        "image": "https://www.checkfront.com/wp-content/uploads/2022/05/img_6273f0e0deafc.jpg"
+      },
+      {
+        "name": "sam",
+        "intro": "Greetings from Mumbai! I'm Sam, excited to take you on a journey through the city's rich history and scenic beauty",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzklKIiPih7DqD11Su_JDuxh74KUtGj0GkAQ&usqp=CAU"
+      },
+      {
+        "name": "Casey",
+        "intro": "Hi there! Welcome to Mumbai. I'm Casey, thrilled to guide you through the colorful streets and fascinating landmarks of our city",
+        "image": "https://www.checkfront.com/wp-content/uploads/2022/05/img_6273f0e0deafc.jpg"
+      },
+      {
+        "name": "Taylor",
+        "intro": "Welcome to the magical city of Mumbai! I'm Taylor, your guide for today, eager to show you the charm and wonders of our city",
+        "image": "https://www.retekess.com/BlogImage/20231017/1642118350/Tourist-guide.jpg"
+      }
+
+
+    ]
+  }
+  
