@@ -30,3 +30,19 @@
       document.addEventListener("DOMContentLoaded", function() {
         initAutocomplete();
       });
+
+
+
+      document.getElementById('openLoginPopup').addEventListener('click', function() {
+        document.getElementById('loginPopup').style.display = 'flex';
+    });
+    
+    document.querySelector('.close').addEventListener('click', function() {
+        document.getElementById('loginPopup').style.display = 'none';
+    });
+    
+    window.addEventListener('click', function(event) {
+        if (event.target == document.getElementById('loginPopup')) {
+            document.getElementById('loginPopup').style.display = 'none';
+        }
+    });
