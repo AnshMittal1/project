@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TripS</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=&libraries=places"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALserzUo00vS2lUkpNslPffpgo2RztCjA&libraries=places"></script>
     <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -13,23 +14,56 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-</head> 
+</head>
+
 <body>
     <header class="header">
         <nav class="nav">
             <div class="logo"><img width="91px" src="logo.png" alt="logo"></div>
             <ul class="nav-links">
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">Find Guide</a></li>
-                <li><a href="#">Tour Package</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li>
+                    <a href="#" class="navigation">     <!-- explore -->
+                        <span class="nav-inner">
+                            <span class="nav-text">
+                                Explore
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="navigation">
+                        <span class="nav-inner">
+                            <span class="nav-text">
+                                Find Guide
+                            </span>       
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="navigation">
+                        <span class="nav-inner">
+                            <span class="nav-text">
+                                Tour Package
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="navigation">
+                        <span class="nav-inner">
+                            <span class="nav-text">
+                                Contact Us
+                            </span>
+                        </span>
+                    </a>
+                </li>
             </ul>
             <div class="search-container">
                 <input id="autocomplete" type="text" placeholder="Enter a location">
                 <button id="searchButton" class="bt" type="submit">
                     <span class="btn-inner">
-                        <span class="btn-text">Search<span>
-                      </span>
+                        <span class="btn-text">Search</span>
+                            </span>
                 </button>
             </div>
             <div class="cta">
@@ -53,7 +87,7 @@
             </ul>
         </div>
     </header>
-    
+
 
 
     <div id="loginPopup" class="popup">
@@ -63,16 +97,16 @@
             <form id="loginForm">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
-                
+
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
-                
+
                 <div class="checkbox-container">
                     <input type="checkbox" id="rememberMe" name="rememberMe">
                     <label for="rememberMe">Remember me</label>
                     <a href="#" class="forgot-password">Forgot Password?</a>
                 </div>
-                
+
                 <button class="login-submit" type="submit">Login</button>
                 <div class="register-link">Don't have an account? <a href="#">Register</a></div>
             </form>
@@ -82,86 +116,95 @@
 
 
     <main>
-    <div class="content">
-        <h1>Discover The Guides You Need</h1>
-        <p>To get the best of your adventure you just need to leave your house and go where you like. We are waiting for you. Let's make your best trip ever.</p>
-        <div class="buttons">
-            <a href="#">Find out more</a>
-            <a href="#" class="demo">Play Demo</a>
-        </div>
-    </div>
-    
-    <section class="features">
-        <div class="feature">
-            <h3>Various Destinations</h3>
-            <p>Total 45+ destinations that we work with</p>
-            <a href="#">Learn more</a>
-        </div>
-        <div class="feature">
-            <h3>Best Tour Guide</h3>
-            <p>Tour guide with 20+ years of experience.</p>
-            <a href="#">Learn more</a>
-        </div>
-        <div class="feature">
-            <h3>Easy Booking</h3>
-            <p>With an easy and fast payments process.</p>
-            <a href="#">Learn more</a>
-        </div>
-        <div class="feature">
-            <h3>Reservation Now</h3>
-            <p>Call us for booking. We are ready to book.</p>
-            <a href="#">Learn more</a>
-        </div> 
-    </section>
-
-    <div class="popular">
-        <div class="info-card">
-            <img class="guide-img" src="https://etimg.etb2bimg.com/photo/89769548.cms" alt="image-of-guide">
-            <div class="guide-text">
-                <h2 class="name">Name of the guide</h2>
-                <div class="guide-info">Here will be the information of this guide but for now this is reserved for dummy text...</div>
-                <div class="guide-btn">
-                    <button class="guide-contact">Contact</button>
-                </div>
+        <div class="content">
+            <h1>Discover The Guides You Need</h1>
+            <p>To get the best of your adventure you just need to leave your house and go where you like. We are waiting
+                for you. Let's make your best trip ever.</p>
+            <div class="buttons">
+                <a href="#">Find out more</a>
+                <a href="#" class="demo">Play Demo</a>
             </div>
         </div>
 
-        <div class="info-card">
-            <img class="guide-img" src="https://media.istockphoto.com/id/1431112826/photo/travel-education-and-a-teacher-with-students-on-school-field-trip-on-urban-tour-woman-city.jpg?s=612x612&w=0&k=20&c=-E9h2V4m1OclhdO7RAQMeZ2iq9x4dY7GVB3PJvnD7ao=" alt="image-of-guide">
-            <div class="guide-text">
-                <h2 class="name">Name of the guide</h2>
-                <div class="guide-info">Here will be the information of this guide but for now this is reserved for dummy text...</div>
-                <div class="guide-btn">
-                    <button class="guide-contact">Contact</button>
+        <section class="features">
+            <div class="feature">
+                <h3>Various Destinations</h3>
+                <p>Total 45+ destinations that we work with</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="feature">
+                <h3>Best Tour Guide</h3>
+                <p>Tour guide with 20+ years of experience.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="feature">
+                <h3>Easy Booking</h3>
+                <p>With an easy and fast payments process.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="feature">
+                <h3>Reservation Now</h3>
+                <p>Call us for booking. We are ready to book.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </section>
+
+        <div class="popular">
+            <div class="info-card">
+                <img class="guide-img" src="https://etimg.etb2bimg.com/photo/89769548.cms" alt="image-of-guide">
+                <div class="guide-text">
+                    <h2 class="name">Name of the guide</h2>
+                    <div class="guide-info">Here will be the information of this guide but for now this is reserved for
+                        dummy text...</div>
+                    <div class="guide-btn">
+                        <button class="guide-contact">Contact</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <img class="guide-img"
+                    src="https://media.istockphoto.com/id/1431112826/photo/travel-education-and-a-teacher-with-students-on-school-field-trip-on-urban-tour-woman-city.jpg?s=612x612&w=0&k=20&c=-E9h2V4m1OclhdO7RAQMeZ2iq9x4dY7GVB3PJvnD7ao="
+                    alt="image-of-guide">
+                <div class="guide-text">
+                    <h2 class="name">Name of the guide</h2>
+                    <div class="guide-info">Here will be the information of this guide but for now this is reserved for
+                        dummy text...</div>
+                    <div class="guide-btn">
+                        <button class="guide-contact">Contact</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <img class="guide-img" src="https://upload.wikimedia.org/wikipedia/commons/3/32/Tour_Guide.jpg"
+                    alt="image-of-guide">
+                <div class="guide-text">
+                    <h2 class="name">Name of the guide</h2>
+                    <div class="guide-info">Here will be the information of this guide but for now this is reserved for
+                        dummy text...</div>
+                    <div class="guide-btn">
+                        <button class="guide-contact">Contact</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <img class="guide-img" src="https://www.india-tours.com/images/press-release/tour-guide.jpg"
+                    alt="image-of-guide">
+                <div class="guide-text">
+                    <h2 class="name">Name of the guide</h2>
+                    <div class="guide-info">Here will be the information of this guide but for now this is reserved for
+                        dummy text...</div>
+                    <div class="guide-btn">
+                        <button class="guide-contact">Contact</button>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="info-card">
-            <img class="guide-img" src="https://upload.wikimedia.org/wikipedia/commons/3/32/Tour_Guide.jpg" alt="image-of-guide">
-            <div class="guide-text">
-                <h2 class="name">Name of the guide</h2>
-                <div class="guide-info">Here will be the information of this guide but for now this is reserved for dummy text...</div>
-                <div class="guide-btn">
-                    <button class="guide-contact">Contact</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="info-card">
-            <img class="guide-img" src="https://www.india-tours.com/images/press-release/tour-guide.jpg" alt="image-of-guide">
-            <div class="guide-text">
-                <h2 class="name">Name of the guide</h2>
-                <div class="guide-info">Here will be the information of this guide but for now this is reserved for dummy text...</div>
-                <div class="guide-btn">
-                    <button class="guide-contact">Contact</button>
-                </div>
-            </div>
-        </div>  
-    </div>
-</main>
+    </main>
     <footer class="footer_c">
-        <div class="footer_primary"> 
+        <div class="footer_primary">
             <a href="#" class="trademark_footer"><span class="tr">Trademark Policy</span></a>
             <a href="#" class="Privacy_policy"><span class="pp">Privacy Policy</span></a>
             <a href="#" class="Code_of_conduct"><span class="coc">Code of Conduct</span></a>
@@ -171,7 +214,8 @@
         <div class="Secondry_footer">
             <span class="Trips_cc">© TripS Foundation</span>
             <div class="Footer_social">
-                <a href="https://github.com/AnshMittal1/project" target="_blank" rel="noopener noreferrer" class="github_link">
+                <a href="https://github.com/AnshMittal1/project" target="_blank" rel="noopener noreferrer"
+                    class="github_link">
                     <span class="github_s">
                         <img src="github_logo.png" alt="github_of_creators">
                     </span>
@@ -181,7 +225,7 @@
                         <img src="317750_linkedin_icon.png" alt="linkedin_of_creators">
                     </span>
                 </a>
-            </div>    
+            </div>
         </div>
     </footer>
     <script>
@@ -194,4 +238,5 @@
     </script>
     <script src="script.js"></script>
 </body>
+
 </html>

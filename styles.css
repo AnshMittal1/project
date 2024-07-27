@@ -37,7 +37,119 @@ body {
 body {
     background-color: #000000;
 }
+/* changing here  */
+.navigation
+{
+    transition: all 0.2s ease;
+    background: #d2d5d8;
+    border: 0;
+    font-weight: bold;
+    display: block;
+    border-radius: 25px;
+    position: relative;
+    outline: none;
+    padding: 0.2rem 0.2rem;
+    cursor: pointer;
+    min-width: 100px;
+    text-decoration: none;
+    animation-name: button;
+    animation-duration: 0.75s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    /* Removed conflicting animation properties */
+}
 
+.nav-text
+{
+    color: #333;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    opacity: 1;
+    animation-name: button-text;
+    animation-duration: 0.75s;
+    animation-delay: 1.3s;
+    animation-fill-mode: backwards;
+   
+}
+
+.navigation:before,
+.navigation:after,
+.navigation .nav-inner:before,
+.navigation .nav-inner:after
+{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 25px;
+}
+
+.navigation .nav-inner {
+    max-width: 150px;
+    position: relative;
+    background: #d2d5d8;
+    padding: 0.5rem 1rem;
+    display: block;
+    border-radius: 25px;
+    position: relative;
+}
+
+.navigation.active .nav-text {
+    font-size: 0.75rem;
+}
+
+.navigation.active .nav-inner:before {
+    box-shadow: 4px 4px 10px inset #9496B0;
+    -webkit-box-shadow: 4px 4px 10px inset #9496B0;
+}
+
+.navigation.active .nav-inner:after {
+    box-shadow: -4px -4px 10px inset #fff;
+    -webkit-box-shadow: -4px -4px 10px inset #fff;
+}
+
+.navigation:before {
+    animation-name: button-before;
+    animation-duration: 0.75s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.navigation:after {
+    animation-name: button-after;
+    animation-duration: 0.75s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+/* New keyframes for glowing effect */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px #fff;
+    }
+    50% {
+        box-shadow: 0 0 0px #fff, 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #fff, 0 0 12.5px #fff, 0 0 15px #fff;
+    }
+    100% {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px #fff;
+    }
+}
+
+
+.navigation:hover .nav-inner {
+    animation: glow 1.5s infinite alternate;
+    background: #b0b3b6; 
+}
+
+.navigation:hover .nav-text {
+    color: #000; 
+}
+
+
+/* changed till here  */
 .bt {
     transition: all 0.2s ease;
     background: #d2d5d8;
@@ -159,7 +271,7 @@ body {
     }
 
     to {
-        background: linear-gradient(165deg, rgba(255, 255, 255, 1) 10%, rgba(148, 150, 176, 1) 100%);
+        background: linear-gradient(165deg, rgba(255, 255, 255, 1) 10%, rgb(123, 177, 208) 100%);
     }
 }
 
@@ -183,20 +295,6 @@ body {
 
 .nav-links li {
     display: inline;
-}
-
-.nav-links li a {
-    text-decoration: none;
-    margin-right: 20px;
-    font-size: 14px;
-    padding: 5px 10px;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-    color: #0c3141;
-}
-
-.nav-links li:hover a {
-    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .search-container {
@@ -372,15 +470,15 @@ body {
 }
 
 .content {
-    background: url(pexels-pixabay-417173.jpg) no-repeat center center;
+    background: url(pexels-pixabay-417173.jpg) fixed center center;
     background-size: cover;
     position: relative;
     text-align: center;
     color: #093656;
     padding: 100px 20px;
-    margin-top: 100px;
+    margin-top: 90px;
 }
-
+     
 
 .content h1 {
     font-size: 48px;
