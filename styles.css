@@ -581,7 +581,7 @@ body {
     animation: fade-in linear forwards;
     animation-timeline: view();
     animation-range: 250px 300px;
-}
+} 
 
 .info-card:hover {
     box-shadow: 0 4px 8px 0 rgba(170, 170, 170, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
