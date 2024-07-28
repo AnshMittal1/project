@@ -34,9 +34,7 @@ body {
     height: auto;
 }
 
-body {
-    background-color: #000000;
-}
+
 /* changing here  */
 .navigation
 {
@@ -582,7 +580,7 @@ body {
     opacity: 0;
     animation: fade-in linear forwards;
     animation-timeline: view();
-    animation-range: 250px 400px;
+    animation-range: 250px 300px;
 }
 
 .info-card:hover {
