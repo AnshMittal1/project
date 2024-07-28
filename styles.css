@@ -8,7 +8,8 @@ body {
 
 /* General styles */
 .header {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(16, 24, 32,0.9);
+
     padding: 20px;
     position: fixed;
     width: 100%;
@@ -54,7 +55,6 @@ body {
     animation-duration: 0.75s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
-    /* Removed conflicting animation properties */
 }
 
 .nav-text
@@ -99,15 +99,9 @@ body {
     font-size: 0.75rem;
 }
 
-.navigation.active .nav-inner:before {
-    box-shadow: 4px 4px 10px inset #9496B0;
-    -webkit-box-shadow: 4px 4px 10px inset #9496B0;
-}
 
-.navigation.active .nav-inner:after {
-    box-shadow: -4px -4px 10px inset #fff;
-    -webkit-box-shadow: -4px -4px 10px inset #fff;
-}
+
+
 
 .navigation:before {
     animation-name: button-before;
@@ -129,10 +123,10 @@ body {
         box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px #fff;
     }
     50% {
-        box-shadow: 0 0 0px #fff, 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #fff, 0 0 12.5px #fff, 0 0 15px #fff;
+        box-shadow: 0 0 0px #fff, 0 0 2px #fff, 0 0 3.5px #fff, 0 0 6.5px #fff, 0 0 8.5px #fff, 0 0 9px #fff, 0 0 10px #fff;
     }
     100% {
-        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px #fff;
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 15px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff;
     }
 }
 
@@ -233,25 +227,6 @@ body {
     -webkit-box-shadow: -4px -4px 10px inset #fff;
 }
 
-@keyframes button-before {
-    from {
-        box-shadow: 0 0 0 #fff;
-    }
-
-    to {
-        box-shadow: -10px -8px 20px #fff;
-    }
-}
-
-@keyframes button-after {
-    from {
-        box-shadow: 0 0 0 #9496B0;
-    }
-
-    to {
-        box-shadow: 10px 8px 20px #9496B0;
-    }
-}
 
 @keyframes button-inner {
     from {
@@ -473,8 +448,10 @@ body {
     position: relative;
     text-align: center;
     color: #093656;
-    padding: 100px 20px;
-    margin-top: 90px;
+    padding: 100px 30px;
+    padding-bottom: 150px; 
+    padding-top: 150px;
+    margin-top: 0;
 }
      
 
